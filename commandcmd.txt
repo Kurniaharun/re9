@@ -1,0 +1,31 @@
+Steps to follow and commands :
+power shell
+run this command on power shell (Set-ExecutionPolicy RemoteSigned -Scope Proces)
+if upper command does not work then use this command (takeown /f "C:\Program Files\WindowsApps" /r /d y)
+it will take some time.
+Then run (Set-ExecutionPolicy RemoteSigned -Scope Proces) again.
+after that (cd your address where DG_Readiness_Tool_v3.6 is installed) i.e for my case: 
+(cd D:\ResidentEvil\New\dgreadiness_v3.6) 
+then run this command 
+.\DG_Readiness_Tool_v3.6.ps1 -Disable
+Then restart pc it will rake you to screen press (window or F3 button both time)
+CMD
+sc create denuvo type=kernel start=demand binPath=C:\Drivers\HYPERVISOR\hyperkd.sys
+bcdedit /set hypervisorlaunchtype off
+Enable test signing mode via bcdedit (bcdedit /set testsigning on)
+then restart 
+Note: test mode only unable when safe boot is disabled
+then run 
+
+ 
+
+
+──── Follow On Social Media ────
+Instagram  -  https://www.instagram.com/anasplays14
+Discord      -  https://discord.gg/4tNKEQhJME
+Snapchat    -  Snapchat : anas_khalid15
+Tiktok     -      https://www.tiktok.com/@anasplays14
+Telegram -    https://t.me/anasplays
+───────
+Please Subscribe & Share My Channel
+ /  https://www.youtube.com/channel/UCw5lKxdUJC2A0P9_h9-nY5w/join
